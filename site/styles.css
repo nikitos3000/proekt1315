@@ -42,16 +42,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Изменено для выравнивания контента по верхнему краю */
-    padding-top: 20px; /* Добавлен отступ сверху */
+    justify-content: flex-start; 
+    padding-top: 20px; 
 }
 
 
 .logo-panel {
     display: flex;
-    justify-content: center; /* Изменено для центрирования логотипа по горизонтали */
-    align-items: flex-start; /* Изменено для выравнивания логотипа по верхнему краю */
-    margin-top: 20px; /* Добавлен отступ сверху */
+    justify-content: center; 
+    align-items: flex-start; 
+    margin-top: 20px; 
 }
 
 .button-container {

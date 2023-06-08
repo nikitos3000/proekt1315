@@ -55,8 +55,7 @@
     margin-left: auto;
 }
 
-.about-button,
-.contact-button {
+.about-button, .contact-button {
     background-color: transparent;
     border: none;
     color: black;
@@ -98,6 +97,31 @@
     height: 100vh;
 }
 
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+
+.left-button {
+    background-color: red;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 10px;
+    height: 300px;
+    width: 600px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.left-button:hover {
+    background-color: #87CEEB;
+}
+
 .photo-wrapper {
     display: flex;
     flex-direction: column;
@@ -110,18 +134,9 @@
     margin-bottom: 10px;
 }
 
-.large-button {
-    background-color: #B00000;
-    border-radius: 10px;
-    color: white;
-    border: none;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 10px 10px;
-    cursor: pointer;
-    width: 600px;
-    height: 250px;
-}
+
+
+
 
 
 

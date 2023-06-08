@@ -1,6 +1,6 @@
 .header {
-    background-color:#F0F8FF;
-    height: 50px; 
+    background-color: #F0F8FF;
+    height: 50px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -8,85 +8,55 @@
     border-bottom: 1px solid #C0C0C0;
 }
 
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px; 
-    margin-left: 50px; 
-    height: calc(100% - 50px);
-}
-
-.image {
-    max-height: 100%; 
-    max-width: 100%; 
-}
-
 .panel {
-    background-color: #DAA520; 
-    width: 50px; 
-    height: 100vh; 
-    position: fixed; 
-    top: 0; 
-    left: 0; 
+    background-color: #6600ff;
+    width: 50px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .panel-2 {
     background-color: white;
-    width: 140px;
+    width: 11em;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 50px;
-    border-right: .5px solid #C0C0C0;
+    border-right: 1px solid #C0C0C0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; 
-    padding-top: 20px; 
+    justify-content: flex-start;
+    padding-top: 20px;
 }
-
 
 .logo-panel {
     display: flex;
-    justify-content: center; 
-    align-items: flex-start; 
-    margin-top: 20px; 
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
 }
 
 .button-container {
-    margin-top: 20px; 
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 300px;
 }
 
 .logo {
-    margin: 0 auto;
     max-width: 100%;
-    max-height: 100px; 
-}
-
-.dream-button {
-    position: absolute;
-    bottom: 100px;
-    left: 210px;
-    background-color: #DC143C;
-    border-style: dashed;
-    color: white;
-    padding: 50px;
-    width: 1000px;
-    border: none;
-    border-radius: 100px;
-    font-weight: bold;
-    font-size: 30px;
+    max-height: 100px;
 }
 
 .buttons-container {
     margin-left: auto;
 }
 
-.about-button, .contact-button {
+.about-button,
+.contact-button {
     background-color: transparent;
     border: none;
     color: black;
@@ -100,8 +70,8 @@
     margin: 0 10px;
 }
 
-.dream-button:hover{
-    background-color:  #B00000;
+.dream-button:hover {
+    background-color: #B00000;
     color: white;
 }
 
@@ -119,3 +89,39 @@
 .panel-button:hover {
     background-color: #87CEEB;
 }
+
+.right-section {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-right: 20px;
+    height: 100vh;
+}
+
+.photo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.photo {
+    max-width: 100%;
+    max-height: 4000px;
+    margin-bottom: 10px;
+}
+
+.large-button {
+    background-color: #B00000;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 10px;
+    cursor: pointer;
+    width: 600px;
+    height: 250px;
+}
+
+
+

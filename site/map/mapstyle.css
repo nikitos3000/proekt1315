@@ -9,7 +9,7 @@
 }
 
 .panel {
-    background-color: #DAA520; 
+    background-color: #1E90FF; 
     width: 50px; 
     height: 100vh; 
     position: fixed; 
@@ -52,4 +52,8 @@
     
 .divider {
     margin: 0 10px;
+}
+
+.content{
+    margin-left: 1000px;
 }

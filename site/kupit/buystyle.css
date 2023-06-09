@@ -53,3 +53,42 @@
 .divider {
     margin: 0 10px;
 }
+
+.card {
+    width: calc(33.33% - 20px); 
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%; 
+    }
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+.product-details {
+    padding: 10px;
+    background-color: #F5F5F5;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #1E90FF;
+}
+
+.product-info {
+    margin-bottom: 5px;
+}

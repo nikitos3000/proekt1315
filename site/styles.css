@@ -1,3 +1,7 @@
+body{
+    background-color: white;
+}
+
 .header {
     background-color: #F0F8FF;
     height: 50px;
@@ -9,7 +13,7 @@
 }
 
 .panel {
-    background-color: #6600ff;
+    background-color: #1E90FF;
     width: 50px;
     height: 100vh;
     position: fixed;
@@ -86,7 +90,7 @@
 }
 
 .panel-button:hover {
-    background-color: #87CEEB;
+    background-color: #3335a3;
 }
 
 .right-section {
@@ -105,7 +109,7 @@
 }
 
 .left-button {
-    background-color: red;
+    background-color:  #1E90FF;
     border: none;
     color: black;
     font-weight: bold;
@@ -116,10 +120,11 @@
     margin-bottom: 5px;
     cursor: pointer;
     border-radius: 50px;
+    transition-duration: 0.5s;
 }
 
 .left-button:hover {
-    background-color: #87CEEB;
+    background-color: #F8F4FF;
 }
 
 .photo-wrapper {
@@ -134,7 +139,16 @@
     margin-bottom: 10px;
 }
 
+.left-button:nth-child(2) {
+    background-color: #F8F4FF;
+    color: black;
+    border: #C0C0C0 solid 1px;
+    transition-duration: 0.5s;
+}
 
+.left-button:nth-child(2):hover{
+    background-color: #1E90FF;
+}
 
 
 

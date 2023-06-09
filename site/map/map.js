@@ -3,7 +3,7 @@ let map;
 DG.then(function () {
     map = DG.map('map', {
         center: [43.585472, 39.723098],
-        zoom: 15
+        zoom: 13
     });
 
     DG.marker([43.606076, 39.724020]).addTo(map).bindPopup('Вы кликнули по мне!');

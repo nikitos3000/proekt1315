@@ -38,6 +38,80 @@
             <img src="img/dom.png" alt="Фотография" class="photo">
         </div>
     </div>
+    <div class="calculator">
+        <h3>Калькулятор стоимости жилья</h3>
+        
+        <label for="location">Расположение:</label>
+        <select id="location">
+          <option value="center">Центр</option>
+          <option value="outskirts">Окраины</option>
+        </select>
+        
+        <label for="house-type">Тип дома:</label>
+        <select id="house-type">
+          <option value="private">Частный</option>
+          <option value="multifamily">Многоквартирный</option>
+        </select>
+        
+        <div id="multifamily-questions" style="display: none;">
+          <label for="floors">Этажность дома:</label>
+          <input type="range" id="floors" min="1" max="20">
+          
+          <label for="apartment-floor">Этаж квартиры:</label>
+          <input type="range" id="apartment-floor" min="1" max="20">
+          
+          <label for="total-area">Общая площадь:</label>
+          <input type="range" id="total-area" min="1" max="500">
+          
+          <label for="rooms">Количество комнат:</label>
+          <div id="rooms">
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button value="4+">4+</button>
+          </div>
+          
+          <label for="condition">Состояние квартиры:</label>
+          <select id="condition">
+            <option value="no-repairs">Не требует ремонта</option>
+            <option value="unfinished">Без отделки</option>
+            <option value="euro-renovation">Евро ремонт</option>
+          </select>
+        </div>
+        
+        <div id="house-questions" style="display: none;">
+          <label for="house-floors">Этажность дома:</label>
+          <input type="range" id="house-floors" min="1" max="5">
+          
+          <label for="house-rooms">Количество комнат:</label>
+          <div id="house-rooms">
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button value="4+">4+</button>
+          </div>
+          
+          <label for="house-area">Площадь дома:</label>
+          <input type="range" id="house-area" min="1" max="500">
+          
+          <label for="land-area">Площадь участка:</label>
+          <input type="range" id="land-area" min="1" max="500">
+        </div>
+        
+        <label for="currency">Валюта оценки:</label>
+        <select id="currency">
+          <option value="usd">USD</option>
+          <option value="rub">RUB</option>
+          <option value="eur">EUR</option>
+        </select>
+        
+        <button id="calculate-button">Рассчитать</button>
+        
+        <div id="result" style="display: none;">
+          <h4>Результат:</h4>
+          <p id="price"></p>
+        </div>
+      </div>
 
     <script src="index.js"></script>
 </body>

@@ -62,12 +62,6 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-    .card {
-        width: 100%; 
-    }
-}
-
 .product-image {
     width: 100%;
     height: auto;
@@ -91,4 +85,8 @@
 
 .product-info {
     margin-bottom: 5px;
+}
+
+.content {
+ margin-left: 200px;
 }

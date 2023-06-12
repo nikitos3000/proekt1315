@@ -150,9 +150,14 @@ body{
     background-color: #1E90FF;
 }
 
-.calculator {
+.calc {
     margin-left: 1000px;
     margin-bottom: 500px;
+}
+
+#multifamilyQuestions,
+#singlefamilyQuestions {
+  display: none;
 }
 
 

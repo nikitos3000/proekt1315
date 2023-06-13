@@ -151,8 +151,11 @@ body{
 }
 
 .calc {
-    margin-left: 1000px;
+    width: 1000px;
+    height: 500px;
+    margin-left: 300px;
     margin-bottom: 500px;
+    background-color: #1e90ff;
 }
 
 #multifamilyQuestions,

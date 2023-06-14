@@ -96,7 +96,6 @@ body{
 .right-section {
     display: flex;
     justify-content: flex-end;
-    padding-top: 20px;
     padding-right: 20px;
     height: 100vh;
 }
@@ -154,8 +153,12 @@ body{
     width: 1000px;
     height: 500px;
     margin-left: 300px;
-    margin-bottom: 500px;
     background-color: #1e90ff;
+}
+
+.services{
+    margin-left: 50em;
+    margin-top: -15em;
 }
 
 #multifamilyQuestions,
@@ -163,5 +166,32 @@ body{
   display: none;
 }
 
+.hr {
+    color: #1E90FF;
+}
+
+.service-button {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition-duration: 0.5s;
+}
+
+.service-button .button-icon {
+    max-width: 20px;
+    margin-right: 5px;
+}
+
+.service-button:hover {
+    background-color: #3335a3;
+}
 
 

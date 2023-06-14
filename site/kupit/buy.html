@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Cписок жилья</title>
-    <link rel="stylesheet" type="text/css" href="buystyle.css">
+    <link rel="stylesheet" type="text/css" href="/site/kupit/buystyle.css">
 </head>
 <body>
     <div class="header">
@@ -16,139 +16,170 @@
     <div class="panel"></div>
     <div class="panel-2">
         <div class="logo-panel">
-            <img src="логотип.png" alt="Логотип" class="logo">
+            <img src="/site/img/log.png" alt="Логотип" class="logo">
         </div>
+    </div>
+    <div class="filter">
+        <select name="" id="price">
+            <option title="" value="0">Цена</option>
+            <option value="1">0-150,000</option>
+            <option value="2">150,000-200,000</option>
+            <option value="3">200,000-500,000</option>
+            <option value="4">500,000-1,000,000</option>
+        </select>
+        <select name="" id="area">
+            <option title value="0">Площадь</option>
+            <option value="1">50-75</option>
+            <option value="2">75-100</option>
+            <option value="3">100-250</option>
+            <option value="4">250-500</option>
+        </select>
+        <select name="" id="rooms">
+            <option title value="0">Количество комнат</option>
+            <option value="1">1 комнаты</option>
+            <option value="2">2 комнаты</option>
+            <option value="3">3 комнаты</option>
+            <option value="4">4 комнаты</option>
+            <option value="5">5 комнат</option>
+            <option value="6">6 комнат</option>
+        </select>
+        <select name="" id="type">
+            <option title value="0">Тип недвижимости</option>
+            <option value="House">Дом</option>
+            <option value="Apartment">Квартира</option>
+        </select>
     </div>
     <div class="content">
-    <div class="card">
+    <div class="card active">
         <img src="apartment1.jpg" alt="Apartment 1" class="product-image">
         <div class="product-details">
-            <h3 class="product-title">Просторная квартира в центре города</h3>
-            <p class="product-price">Цена: $200,000</p>
-            <p class="product-info">Площадь: 100 кв. м.</p>
-            <p class="product-info">Количество комнат: 3</p>
-            <p class="product-info">Тип недвижимости: Квартира</p>
+             <h3 class="product-title">Просторная квартира в центре города</h3>
+              <p class="product-price" data-product-price="200000">Цена: $200,000</p>
+              <p class="product-area" data-product-area="100">Площадь: 100 кв. м.</p>
+              <p class="product-rooms" data-product-rooms="3">Количество комнат: 3</p>
+              <p class="product-type" data-product-type="Apartment">Тип недвижимости: Квартира</p>
         </div>
     </div>
     
-    <div class="card">
+    <div class="card active">
         <img src="apartment2.jpg" alt="Apartment 2" class="product-image">
         <div class="product-details">
-            <h3 class="product-title">Уютная квартира с видом на парк</h3>
-            <p class="product-price">Цена: $150,000</p>
-            <p class="product-info">Площадь: 75 кв. м.</p>
-            <p class="product-info">Количество комнат: 2</p>
-            <p class="product-info">Тип недвижимости: Квартира</p>
+                <h3 class="product-title">Уютная квартира с видом на парк</h3>
+                 <p class="product-price" data-product-price="150000">Цена: $150,000</p>
+                 <p class="product-info" data-product-area="75">Площадь: 75 кв. м.</p>
+                 <p class="product-info" data-product-rooms="2">Количество комнат: 2</p>
+                 <p class="product-info" data-product-type="Apartment">Тип недвижимости: Квартира</p>        
         </div>
     </div>
     
-    <div class="card">
+    <div class="card active">
         <img src="house1.jpg" alt="House 1" class="product-image">
         <div class="product-details">
             <h3 class="product-title">Прекрасный дом с садом и бассейном</h3>
-            <p class="product-price">Цена: $500,000</p>
-            <p class="product-info">Площадь: 250 кв. м.</p>
-            <p class="product-info">Количество комнат: 4</p>
-            <p class="product-info">Тип недвижимости: Дом</p>
+             <p class="product-price" data-product-price="500000">Цена: $500,000</p>
+             <p class="product-info" data-product-area="250">Площадь: 250 кв. м.</p>
+             <p class="product-info" data-product-rooms="4">Количество комнат: 4</p>
+             <p class="product-info" data-product-type="House">Тип недвижимости: Дом</p>           
         </div>
     </div>
     
-    <div class="card">
+    <div class="card active">
         <img src="house2.jpg" alt="House 2" class="product-image">
         <div class="product-details">
-            <h3 class="product-title">Изысканный особняк в историческом районе</h3>
-            <p class="product-price">Цена: $1,000,000</p>
-            <p class="product-info">Площадь: 500 кв. м.</p>
-            <p class="product-info">Количество комнат: 6</p>
-            <p class="product-info">Тип недвижимости: Дом</p>
+                <h3 class="product-title">Изысканный особняк в историческом районе</h3>
+                 <p class="product-price" data-product-price="1000000">Цена: $1,000,000</p>
+                 <p class="product-info" data-product-area="500">Площадь: 500 кв. м.</p>
+                 <p class="product-info" data-product-rooms="5">Количество комнат: 5</p>
+                 <p class="product-info" data-product-type="House">Тип недвижимости: Дом</p>          
         </div>
     </div>
-    <div class="card">
+     <div class="card active">
         <img src="apartment1.jpg" alt="Apartment 1" class="product-image">
         <div class="product-details">
             <h3 class="product-title">Просторная квартира в центре города</h3>
-            <p class="product-price">Цена: $200,000</p>
-            <p class="product-info">Площадь: 100 кв. м.</p>
-            <p class="product-info">Количество комнат: 3</p>
-            <p class="product-info">Тип недвижимости: Квартира</p>
+            <p class="product-price" data-product-price="200000">Цена: $200,000</p>
+            <p class="product-info" data-product-area="100">Площадь: 100 кв. м.</p>
+            <p class="product-info" data-product-rooms="6">Количество комнат: 6</p>
+            <p class="product-info" data-product-type="Apartment">Тип недвижимости: Квартира</p>
         </div>
     </div>
     
-    <div class="card">
+    <div class="card active">
         <img src="apartment2.jpg" alt="Apartment 2" class="product-image">
         <div class="product-details">
             <h3 class="product-title">Уютная квартира с видом на парк</h3>
-            <p class="product-price">Цена: $150,000</p>
-            <p class="product-info">Площадь: 75 кв. м.</p>
-            <p class="product-info">Количество комнат: 2</p>
-            <p class="product-info">Тип недвижимости: Квартира</p>
+            <p class="product-price" data-product-price="150000">Цена: $150,000</p>
+            <p class="product-info" data-product-area="75">Площадь: 75 кв. м.</p>
+            <p class="product-info" data-product-rooms="2">Количество комнат: 2</p>
+            <p class="product-info" data-product-type="Apartment">Тип недвижимости: Квартира</p>
         </div>
     </div>
     
-    <div class="card">
+    <div class="card active">
         <img src="house1.jpg" alt="House 1" class="product-image">
         <div class="product-details">
             <h3 class="product-title">Прекрасный дом с садом и бассейном</h3>
-            <p class="product-price">Цена: $500,000</p>
-            <p class="product-info">Площадь: 250 кв. м.</p>
-            <p class="product-info">Количество комнат: 4</p>
-            <p class="product-info">Тип недвижимости: Дом</p>
+            <p class="product-price" data-product-price="500000">Цена: $500,000</p>
+            <p class="product-info" data-product-area="250">Площадь: 250 кв. м.</p>
+            <p class="product-info" data-product-rooms="4">Количество комнат: 4</p>
+            <p class="product-info" data-product-type="House">Тип недвижимости: Дом</p>
         </div>
     </div>
     
-    <div class="card">
+    <div class="card active">
         <img src="house2.jpg" alt="House 2" class="product-image">
         <div class="product-details">
             <h3 class="product-title">Изысканный особняк в историческом районе</h3>
-            <p class="product-price">Цена: $1,000,000</p>
-            <p class="product-info">Площадь: 500 кв. м.</p>
-            <p class="product-info">Количество комнат: 6</p>
-            <p class="product-info">Тип недвижимости: Дом</p>
+            <p class="product-price" data-product-price="1000000">Цена: $1,000,000</p>
+            <p class="product-info" data-product-area="500">Площадь: 500 кв. м.</p>
+            <p class="product-info" data-product-rooms="6">Количество комнат: 6</p>
+            <p class="product-info" data-product-type="House">Тип недвижимости: Дом</p>
         </div>
     </div>
-    <div class="card">
+    <div class="card active">
         <img src="apartment1.jpg" alt="Apartment 1" class="product-image">
         <div class="product-details">
             <h3 class="product-title">Просторная квартира в центре города</h3>
-            <p class="product-price">Цена: $200,000</p>
-            <p class="product-info">Площадь: 100 кв. м.</p>
-            <p class="product-info">Количество комнат: 3</p>
-            <p class="product-info">Тип недвижимости: Квартира</p>
+            <p class="product-price" data-product-price="200000">Цена: $200,000</p>
+            <p class="product-info" data-product-area="100">Площадь: 100 кв. м.</p>
+            <p class="product-info" data-product-rooms="1">Количество комнат: 1</p>
+            <p class="product-info" data-product-type="Apartment">Тип недвижимости: Квартира</p>
         </div>
     </div>
     
-    <div class="card">
+    <div class="card active">
         <img src="apartment2.jpg" alt="Apartment 2" class="product-image">
         <div class="product-details">
             <h3 class="product-title">Уютная квартира с видом на парк</h3>
-            <p class="product-price">Цена: $150,000</p>
-            <p class="product-info">Площадь: 75 кв. м.</p>
-            <p class="product-info">Количество комнат: 2</p>
-            <p class="product-info">Тип недвижимости: Квартира</p>
+            <p class="product-price" data-product-price="800000">Цена: $800,000</p>
+            <p class="product-info" data-product-area="75">Площадь: 75 кв. м.</p>
+            <p class="product-info" data-product-rooms="5">Количество комнат: 5</p>
+            <p class="product-info" data-product-type="Apartment">Тип недвижимости: Квартира</p>
         </div>
     </div>
     
-    <div class="card">
+    <div class="card active">
         <img src="house1.jpg" alt="House 1" class="product-image">
         <div class="product-details">
             <h3 class="product-title">Прекрасный дом с садом и бассейном</h3>
-            <p class="product-price">Цена: $500,000</p>
-            <p class="product-info">Площадь: 250 кв. м.</p>
-            <p class="product-info">Количество комнат: 4</p>
-            <p class="product-info">Тип недвижимости: Дом</p>
+            <p class="product-price" data-product-price="500000">Цена: $500,000</p>
+            <p class="product-info" data-product-area="250">Площадь: 250 кв. м.</p>
+            <p class="product-info" data-product-rooms="4">Количество комнат: 4</p>
+            <p class="product-info" data-product-type="House">Тип недвижимости: Дом</p>
         </div>
     </div>
     
-    <div class="card">
+    <div class="card active">
         <img src="house2.jpg" alt="House 2" class="product-image">
         <div class="product-details">
             <h3 class="product-title">Изысканный особняк в историческом районе</h3>
-            <p class="product-price">Цена: $1,000,000</p>
-            <p class="product-info">Площадь: 500 кв. м.</p>
-            <p class="product-info">Количество комнат: 6</p>
-            <p class="product-info">Тип недвижимости: Дом</p>
+            <p class="product-price" data-product-price="1000000">Цена: $1,000,000</p>
+            <p class="product-info" data-product-area="500">Площадь: 500 кв. м.</p>
+            <p class="product-info" data-product-rooms="6">Количество комнат: 6</p>
+            <p class="product-info" data-product-type="House">Тип недвижимости: Дом</p>
         </div>
     </div>
     </div>
+    <script src="/filter/filter.js"></script>
 </body>
 </html>

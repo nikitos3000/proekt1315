@@ -90,3 +90,38 @@
 .content {
  margin-left: 200px;
 }
+
+.filter {
+    margin-left: 200px;
+}
+
+.inactive {
+    display: none;    
+}
+.active {
+    display: inline-block;
+}
+.typesActive {
+    display: inline-block;
+}
+.priceActive {
+    display: inline-block;
+}
+.areaActive {
+    display: inline-block;
+}
+.roomsActive {
+    display: inline-block;
+}
+.priceInactive {
+    display: none;
+}
+.areaInactive {
+    display: none;
+}
+.roomsInactive {
+    display: none;
+}
+.typesInactive {
+    display: none;
+}

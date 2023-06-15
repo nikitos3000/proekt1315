@@ -194,4 +194,12 @@ body{
     background-color: #3335a3;
 }
 
-
+.product-image {
+    float:left;
+    overflow:hidden;
+    position:relative;
+    width:261px;
+    margin-bottom: 25px;
+    float:left;
+    height:250px;
+}

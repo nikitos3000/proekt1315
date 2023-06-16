@@ -1,0 +1,58 @@
+.header {
+    background-color: #F0F8FF;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #C0C0C0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+.panel {
+    background-color: #1E90FF;
+    width: 50px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .panel-2 {
+    background-color: white;
+    width: 140px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 50px;
+    border-right: .5px solid #C0C0C0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+
+.logo {
+    max-width: 100%;
+    max-height: 100px;
+}
+
+.buttons-container {
+    margin-left: auto;
+}
+
+.about-button, .contact-button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.divider {
+    margin: 0 10px;
+}

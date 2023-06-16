@@ -1,7 +1,7 @@
 function toggleQuestions() {
-  let houseType = document.getElementById('houseType').value;
-  let multifamilyQuestions = document.getElementById('multifamilyQuestions');
-  let singlefamilyQuestions = document.getElementById('singlefamilyQuestions');
+  const houseType = document.getElementById('houseType').value;
+  const multifamilyQuestions = document.getElementById('multifamilyQuestions');
+  const singlefamilyQuestions = document.getElementById('singlefamilyQuestions');
 
   if (houseType === 'multifamily') {
     multifamilyQuestions.style.display = 'block';
@@ -13,7 +13,7 @@ function toggleQuestions() {
 }
 
 function calculate() {
-  let location = document.getElementById('location').value;
+  const location = document.getElementById('location').value;
   let price = 0;
 
   if (location === 'center') {
@@ -22,12 +22,12 @@ function calculate() {
     price += 1000000;
   }
 
-  let houseType = document.getElementById('houseType').value;
+  const houseType = document.getElementById('houseType').value;
 
   if (houseType === 'multifamily') {
-    let area = parseInt(document.getElementById('area').value);
-    let rooms = document.getElementById('rooms').value;
-    let condition = document.getElementById('condition').value;
+    const area = parseInt(document.getElementById('area').value);
+    const rooms = document.getElementById('rooms').value;
+    const condition = document.getElementById('condition').value;
 
     if (area >= 1 && area <= 20) {
       price += 1000000;
@@ -52,9 +52,8 @@ function calculate() {
     } else if (condition === 'euroRepair') {
       price += 2000000;
     }
-
   } else if (houseType === 'singlefamily') {
-    let houseFloors = parseInt(document.getElementById('houseFloors').value);
+    const houseFloors = parseInt(document.getElementById('houseFloors').value);
 
     if (houseFloors === 1) {
       price += 1000000;
@@ -68,7 +67,7 @@ function calculate() {
       price += 5000000;
     }
 
-    let houseRooms = parseInt(document.getElementById('houseRooms').value);
+    const houseRooms = parseInt(document.getElementById('houseRooms').value);
 
     if (houseRooms === 2) {
       price += 1000000;
@@ -78,8 +77,8 @@ function calculate() {
       price += 4000000;
     }
 
-    let houseArea = parseInt(document.getElementById('houseArea').value);
-    let landArea = parseInt(document.getElementById('landArea').value);
+    const houseArea = parseInt(document.getElementById('houseArea').value);
+    const landArea = parseInt(document.getElementById('landArea').value);
 
     if (houseArea >= 1 && houseArea <= 20) {
       price += 1000000;
@@ -98,7 +97,7 @@ function calculate() {
     }
   }
 
-  let currency = document.getElementById('currency').value;
+  const currency = document.getElementById('currency').value;
 
   if (currency === 'USD') {
     price /= 70; // Курс 1 доллар = 70 рублей
@@ -106,6 +105,5 @@ function calculate() {
     price /= 80; // Курс 1 евро = 80 рублей
   }
 
-  document.getElementById('result').innerHTML = 'Оценка недвижимости: ' + price.toFixed(2) + ' ' + currency;
+  document.getElementById('result').innerHTML = `Оценка недвижимости: ${price.toFixed(2)} ${currency}`;
 }
-  

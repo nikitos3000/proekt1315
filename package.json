@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/nikitos3000/proekt1315#readme",
   "devDependencies": {
-    "eslint": "^8.42.0"
+    "eslint": "^8.42.0",
+    "eslint-config-airbnb": "^19.0.4"
+
   }
 }

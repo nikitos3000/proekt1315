@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Золотой риэлтор</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="/site/styles.css">
 </head>
 <body>
     <div class="header">
@@ -15,27 +15,29 @@
 
     <div class="panel"></div>
     <div class="panel-2">
-        <div class="logo-panel">
-            <img src="img/log.png" alt="Логотип" class="logo">
-        </div>
+      <a href="index.html">
+        <button class="logo-button">
+            <img src="/site/img/log.png" alt="Логотип" class="logo">
+        </button>
+      </a>
         <div class="button-container">
-            <a href="kupit/buy.html"><button class="panel-button">Купить</button></a>
-            <button class="panel-button">Продать</button>
-            <button class="panel-button">Все услуги</button>
-            <button class="panel-button">Контакты</button>
-            <button class="panel-button">Отзывы</button>
+            <a href="/site/kupit/buy.html"><button class="panel-button">Купить</button></a>
+            <a href="/site/sell/sell.html"><button class="panel-button">Продать</button></a>
+            <a href="/site/services/services.html"><button class="panel-button">Все услуги</button></a>
+            <a href="/site/contacts/contacts.html"><button class="panel-button">Контакты</button></a>
+            <a href="/site/reviews/reviews.html"><button class="panel-button">Отзывы</button></a>
         </div>
     </div>
 
     <div><h3 style="margin-left: 300px; color: #1E90FF; font-size: 50px;">Мы действительно разбираемся в недвижимости!</h3></div>
-    <div><h1 style="margin-left: 300px; margin-top: -50px; font-size: 20px; color: gold;">Золотой риэлтор</h1></div>
+    <div><h1 style="margin-left: 300px; margin-top: -10px; font-size: 20px; color: #ddc022;">Золотой риэлтор</h1></div>
     <div class="right-section">
         <div class="button-wrapper">
-            <a href="map/map.html"><button class="left-button">Найти подходящий вариант на карте</button></a>
+            <a href="/site/map/map.html"><button class="left-button">Найти подходящий вариант на карте</button></a>
             <button class="left-button">Кнопка 2</button>
         </div>
         <div class="photo-wrapper">
-            <img src="img/dom.png" alt="Фотография" class="photo">
+            <img src="/site/img/dom.png" alt="Фотография" class="photo">
         </div>
     </div>
     <div class="services">
@@ -43,19 +45,19 @@
       
       <div class="button-row">
         <button class="service-button">
-            <img src="img/buy.png" alt="" class="button-icon">
+            <img src="/site/img/buy.png" alt="" class="button-icon">
             Купить
         </button>
         <button class="service-button">
-            <img src="img/sell.jpg" alt="" class="button-icon">
+            <img src="/site/img/sell.jpg" alt="" class="button-icon">
             Продать
         </button>
         <button class="service-button">
-            <img src="img/rent.png" alt="" class="button-icon">
+            <img src="/site/img/rent.png" alt="" class="button-icon">
             Сдать в аренду
         </button>
         <button class="service-button">
-            <img src="img/lease.png" alt="" class="button-icon">
+            <img src="/site/img/lease.png" alt="" class="button-icon">
             Арендовать
         </button>
     </div>
@@ -157,10 +159,32 @@
 
 
     <div class="reviews">
-      
+      <h3 class="heading">Отзывы наших клиентов</h3>
+      <a href="/site/reviews/reviews.html"><button class="all-reviews-button">Все отзывы</button></a>
     </div>
 
-    <script src="index.js"></script>
+    <div class="wrapper">
+      <input type="radio" name="point" id="slide1" checked>
+      <input type="radio" name="point" id="slide2">
+      <input type="radio" name="point" id="slide3">
+      <input type="radio" name="point" id="slide4">
+      <input type="radio" name="point" id="slide5">
+      <div class="slider">
+        <div class="slides slide1"></div>
+        <div class="slides slide2"></div>
+        <div class="slides slide3"></div>
+        <div class="slides slide4"></div>
+        <div class="slides slide5"></div>
+      </div>	
+      <div class="controls">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+        <label for="slide5"></label>
+      </div>
+    </div>
+    <script src="/site/index.js"></script>
 </body>
 </html>
 

@@ -39,6 +39,18 @@
     max-height: 100px;
 }
 
+.logo-button {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+
+  border: none;
+  cursor: pointer;
+
+  background-color: white;
+}
+
 .buttons-container {
     margin-left: auto;
 }

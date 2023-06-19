@@ -36,11 +36,14 @@ body{
     padding-top: 20px;
 }
 
-.logo-panel {
+.logo-button {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     margin-top: 20px;
+
+    border: none;
+    cursor: pointer;
 }
 
 .button-container {

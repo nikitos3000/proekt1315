@@ -105,7 +105,7 @@
 }
 
 .filter {
-    margin-left: 200px;
+    margin:1.2em 200px;
 }
 
 .inactive {
@@ -142,15 +142,18 @@
 .dropdown {
     width: 200px;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f7f7f7;
+    border: 1px solid #00050a;
+    border-radius: 3px;
     color: #333;
+    background-color: #5c9ae0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1em;
   }
   
   .dropdown option {
     background-color: #ccc;
     font-weight: bold;
-    font-size: larger;
+    font-size: medium;
   }
+
   

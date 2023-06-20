@@ -360,3 +360,14 @@ body{
 	-o-transform: scale(1);
 	transform: scale(1);
 }
+
+.help{
+    margin-left: 20em;
+    margin-top: 5em;
+}
+
+.to-contacts{
+    margin-left: 30em;
+    width: 30em;
+    height: 10em;
+}

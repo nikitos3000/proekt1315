@@ -9,11 +9,3 @@ const changePhotoes = (photo) => {
     }
 }
 
-const test = (str) => {
-    console.log(str);
-    console.log(str.slice(0, str.length - 1));
-    console.log(str.slice(0, str.length - 1) + (Number(str.slice(-1)) + 1));
-}
-
-
-test('dgshfgujsdfsvb4')

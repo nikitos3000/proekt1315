@@ -1,54 +1,21 @@
-.header {
-    background-color: #F0F8FF;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #C0C0C0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-.panel {
-    background-color: #1E90FF;
-    width: 50px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  
-  .panel-2 {
-    background-color: white;
-    width: 140px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 50px;
-    border-right: .5px solid #C0C0C0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  
-
-.logo {
-    max-width: 100%;
-    max-height: 100px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.logo-button {
+.header {
+  padding: 10px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  margin-top: 20px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
-  border: none;
-  cursor: pointer;
-
-  background-color: white;
+h1 {
+  font-family: sans-serif;
 }
 
 .buttons-container {
@@ -67,4 +34,9 @@
 
 .divider {
     margin: 0 10px;
+}
+
+.main-theme {
+  width: 100%;
+  height: auto;
 }

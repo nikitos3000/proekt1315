@@ -1,3 +1,12 @@
+@font-face{
+  font-family: 'font-button';
+  src: url('font-good.otf');
+}
+@font-face{
+  font-family: 'font-review';
+  src: url('AnimeAce02.ttf') format('truetype');
+}
+
 .header {
     background-color: #F0F8FF;
     padding: 10px;
@@ -67,4 +76,70 @@
 
 .divider {
     margin: 0 10px;
+}
+.eraseReview{
+  width: calc(100vw - 191px);
+  height: calc(100vh - 47px);
+  position: absolute;
+  overflow: hidden;
+  top: 47px;
+  left: 191px;
+}
+button#button-create-review{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+  font-family: 'font-button';
+  font-size: 20px;
+  font-weight: bold;
+  border-color: aqua;
+  border: dashed;
+  border-radius: 1%;
+}
+button#button-create-review:hover{
+  background-color: burlywood;
+}
+button#button-create-review:active{
+  background-color: rgb(93, 156, 175);
+  border-color: burlywood;
+}
+
+.itemReview{
+  position: absolute;
+  width: 150px;
+  height: 100px;
+}
+.review{
+  font-family: 'font-review';
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 600;
+  border: solid;
+  border-color: rgb(93, 143, 150);
+  position: absolute;
+  border-radius: 30%;
+  background-color: aliceblue;
+  max-width: 350px;
+  height: auto;
+  box-sizing: content-box;
+  padding: 25px;
+  text-align: center;
+  animation: falling 12s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes falling {
+  from{
+    transform: translateY(0);
+    opacity: 100%;
+  }
+  70%{
+    opacity: 100%;
+  }
+  to {
+    transform: translateY(600px);
+    opacity: 0%;
+  } 
 }

@@ -63,99 +63,82 @@
     </div>
     </div>
     <hr class="hr">
-    <div class="calc">
-      <h1 class="calch1">Калькулятор оценки недвижимости</h1>
+<div class="calc">
+  <div class="calc-panel">
+    <h1 class="title">Калькулятор оценки недвижимости</h1>
 
-      <label for="location">Расположение:</label>
-      <select id="location">
-        <option value="center">Центр</option>
-        <option value="outskirts">Окраины</option>
-      </select>
-    
-      <br><br>
-    
-      <label for="houseType">Тип дома:</label>
-      <select id="houseType" onchange="toggleQuestions()">
-        <option value="multifamily">Многоквартирный</option>
-        <option value="singlefamily">Частный</option>
-      </select>
-    
-      <br><br>
-    
-      <div id="multifamilyQuestions">
-        <label for="area">Общая площадь квартиры (кв. м):</label>
-        <input type="number" id="area">
-    
-        <br><br>
-    
-        <label for="rooms">Количество комнат:</label>
-        <select id="rooms">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4+">4+</option>
-        </select>
-    
-        <br><br>
-    
-        <label for="condition">Состояние квартиры:</label>
-        <select id="condition">
-          <option value="noRepair">Не требует ремонта</option>
-          <option value="noFinishing">Без отделки</option>
-          <option value="euroRepair">Евро ремонт</option>
-        </select>
-    
-        <br><br>
-      </div>
-    
-      <div id="singlefamilyQuestions">
-        <label for="houseFloors">Этажность дома:</label>
-        <select id="houseFloors">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-    
-        <br><br>
-    
-        <label for="houseRooms">Количество комнат:</label>
-        <select id="houseRooms">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4+">4+</option>
-        </select>
-    
-        <br><br>
-    
-        <label for="houseArea">Площадь дома (кв. м):</label>
-        <input type="number" id="houseArea">
-    
-        <br><br>
-    
-        <label for="landArea">Площадь участка (кв. м):</label>
-        <input type="number" id="landArea">
-    
-        <br><br>
-      </div>
-    
-      <label for="currency">Валюта оценки:</label>
-      <select id="currency">
-        <option value="RUB">RUB</option>
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-      </select>
-    
-      <br><br>
-    
-      <button onclick="calculate()" class="start">Рассчитать</button>
-    
-      <br><br>
-    
-      <div id="result"></div>
-    </div>
+    <label for="location" class="label">Расположение:</label>
+    <select id="location" class="input-field">
+      <option value="center">Центр</option>
+      <option value="outskirts">Окраины</option>
+    </select>
+  </div>
+
+  <label for="houseType" class="label">Тип дома:</label>
+  <select id="houseType" class="input-field" onchange="toggleQuestions()">
+    <option value="multifamily">Многоквартирный</option>
+    <option value="singlefamily">Частный</option>
+  </select>
+
+  <div id="multifamilyQuestions" class="calc-panel">
+    <label for="area" class="label">Общая площадь квартиры (кв. м):</label>
+    <input type="number" id="area" class="input-field">
+
+    <label for="rooms" class="label">Количество комнат:</label>
+    <select id="rooms" class="input-field">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4+">4+</option>
+    </select>
+
+    <label for="condition" class="label">Состояние квартиры:</label>
+    <select id="condition" class="input-field">
+      <option value="noRepair">Не требует ремонта</option>
+      <option value="noFinishing">Без отделки</option>
+      <option value="euroRepair">Евро ремонт</option>
+    </select>
+  </div>
+
+  <div id="singlefamilyQuestions" class="calc-panel">
+    <label for="houseFloors" class="label">Этажность дома:</label>
+    <select id="houseFloors" class="input-field">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+
+    <label for="houseRooms" class="label">Количество комнат:</label>
+    <select id="houseRooms" class="input-field">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4+">4+</option>
+    </select>
+
+    <label for="houseArea" class="label">Площадь дома (кв. м):</label>
+    <input type="number" id="houseArea" class="input-field">
+
+    <label for="landArea" class="label">Площадь участка (кв. м):</label>
+    <input type="number" id="landArea" class="input-field">
+  </div>
+
+  <label for="currency" class="label">Валюта оценки:</label>
+  <select id="currency" class="input-field">
+    <option value="RUB">RUB</option>
+    <option value="USD">USD</option>
+    <option value="EUR">EUR</option>
+  </select>
+
+  <div class="calc-panel">
+    <button onclick="calculate()" class="button">Рассчитать</button>
+  </div>
+
+  <div id="result" class="result"></div>
+</div>
+
 
 
     <div class="reviews">

@@ -161,7 +161,6 @@ body{
     margin-top: -15em;
 }
 
-#multifamilyQuestions,
 #singlefamilyQuestions {
   display: none;
 }
@@ -230,7 +229,6 @@ body{
     cursor: pointer;
     border-radius: 50px;
     transition-duration: 0.5s;
-    margin-left: 75em;
   }
   
   .all-reviews-button:hover {
@@ -374,33 +372,41 @@ body{
 
 
   
+body {
+    background-color: #fff;
+  }
+  
   .calc {
     background-color: #f1f1f1;
     padding: 20px;
     border-radius: 10px;
     width: 400px;
     margin: 0 auto;
+    height: 530px;
   }
   
-.calch1 {
+  .calc-panel {
+    margin-bottom: 20px;
+  }
+  
+  .title {
     color: #1464a5;
     text-align: center;
   }
   
-  label {
+  .label {
     color: #1464a5;
     font-weight: bold;
   }
   
-  select,
-  input[type="number"] {
+  .input-field {
     width: 100%;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
   
-.start {
+  .button {
     background-color: #1464a5;
     color: #fff;
     padding: 10px 20px;
@@ -409,16 +415,18 @@ body{
     cursor: pointer;
   }
   
-  button:hover {
+  .button:hover {
     background-color: #0e3c66;
   }
   
-  #result {
+  .result {
     color: #1464a5;
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
   }
+  
+
 
   .social {display: inline-block;}
 .social a {

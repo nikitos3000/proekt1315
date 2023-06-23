@@ -1,12 +1,15 @@
 .header {
-    background-color:#F0F8FF;
-    height: 50px; 
+    background-color: #F0F8FF;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #C0C0C0;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 
 .panel {
     background-color: #1E90FF; 
@@ -104,14 +107,70 @@
     margin-bottom: 5px;
 }
 
+.panel {
+    background-color: #1E90FF;
+    width: 50px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.panel-2 {
+    background-color: white;
+    width: 11em;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 50px;
+    border-right: 1px solid #C0C0C0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+.logo-button {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+
+    border: none;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+}
+
+.panel-button {
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.panel-button:hover {
+    background-color: #3335a3;
+}
+
 .content {
- margin-left: 200px;
+ margin-left: 220px;
  display: flex;
  flex-wrap: wrap;
 }
 
 .filter {
-    margin:1.2em 200px;
+    margin: 4em 230px;
 }
 
 .inactive {

@@ -93,4 +93,69 @@
 .telegram a {background: #249bd7}
 .vk a {background: #4a76a8}
 
+.main{
+  margin-left: 5em;
+}
 
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  margin-left: 5em;
+}
+
+.content {
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group input[type="text"] {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  background-color: #0080ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  color: #333;
+  display: block;
+  margin-top: 10px;
+}
+
+.checkbox-label a {
+  color: #0080ff;
+  text-decoration: none;
+}

@@ -107,3 +107,23 @@ function calculate() {
 
   document.getElementById('result').innerHTML = `Оценка недвижимости: ${price.toFixed(2)} ${currency}`;
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const openButton = document.getElementById('open-dialog');
+  const dialogOverlay = document.getElementById('dialog-overlay');
+  const closeButton = document.getElementById('close-dialog');
+
+  function openDialog() {
+      dialogOverlay.style.display = 'flex';
+  }
+
+  function closeDialog() {
+      dialogOverlay.style.display = 'none';
+  }
+
+  openButton.addEventListener('click', openDialog);
+  closeButton.addEventListener('click', closeDialog);
+});
+
+
+

@@ -26,6 +26,7 @@
             <a href="/site/services/services.html"><button class="panel-button">Все услуги</button></a>
             <a href="/site/contacts/contacts.html"><button class="panel-button">Контакты</button></a>
             <a href="/site/reviews/reviews.html"><button class="panel-button">Отзывы</button></a>
+            <button id="open-dialog">Открыть окно диалога</button>
         </div>
     </div>
 
@@ -40,6 +41,18 @@
             <img src="/site/img/dom.png" alt="Фотография" class="photo">
         </div>
     </div>
+    <div id="dialog-overlay" class="dialog-overlay">
+      <div class="dialog-content">
+          <div class="message">
+              <img class="avatar" src="ivan_avatar.png" alt="Иван">
+              <div class="message-text">
+                  <p class="name">Иван</p>
+                  <p>Добрый день, могу ли я вам как-нибудь помочь?</p>
+              </div>
+          </div>
+          <button id="close-dialog" class="close-button">Закрыть</button>
+      </div>
+  </div>
     <div class="services">
       <h3>Операции с недвижимостью</h1>
       
@@ -203,6 +216,14 @@
       <h3>Остались вопросы?</h3>
       <a href="/site/contacts/contacts.html"><button class="to-contacts">Свяжитесь с нами</button></a>
     </div>
+
+    <div id="dialog-overlay" class="dialog-overlay">
+      <div class="dialog-content">
+          <h2>Заголовок окна диалога</h2>
+          <p>Текст окна диалога</p>
+          <button id="close-dialog" class="close-button">Закрыть</button>
+      </div>
+  </div>
     <footer style="background-color: gray; height: 10em; margin-top: 5em; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
       <p style="text-align: center; font-size: 1.5em; margin-bottom: 0.5em;">Подписывайтесь на нас в социальных сетях:</p>
       <ul style="list-style: none; display: flex; justify-content: center; flex-wrap: wrap;">

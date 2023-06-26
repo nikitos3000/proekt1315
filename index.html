@@ -23,7 +23,6 @@
         <div class="button-container">
             <a href="/site/kupit/buy.html"><button class="panel-button">Купить</button></a>
             <a href="/site/sell/sell.html"><button class="panel-button">Продать</button></a>
-            <a href="/site/services/services.html"><button class="panel-button">Все услуги</button></a>
             <a href="/site/contacts/contacts.html"><button class="panel-button">Контакты</button></a>
             <a href="/site/reviews/reviews.html"><button class="panel-button">Отзывы</button></a>
             <button id="open-dialog">Открыть окно диалога</button>
@@ -42,15 +41,18 @@
         </div>
     </div>
     <div id="dialog-overlay" class="dialog-overlay">
+      <div class="dialog-header">
+          <button id="close-dialog" class="close-button">Закрыть</button>
+      </div>
       <div class="dialog-content">
           <div class="message">
-              <img class="avatar" src="ivan_avatar.png" alt="Иван">
+              <img class="avatar" src="/site/img/konsultant.png" alt="Иван">
               <div class="message-text">
                   <p class="name">Иван</p>
                   <p>Добрый день, могу ли я вам как-нибудь помочь?</p>
               </div>
           </div>
-          <button id="close-dialog" class="close-button">Закрыть</button>
+          <button class="button-accept">Записаться на консультацию</button> 
       </div>
   </div>
     <div class="services">
@@ -61,17 +63,9 @@
             <img src="/site/img/buy.png" alt="" class="button-icon">
             Купить
         </button>
-        <button class="service-button">
+        <button class="service-button2">
             <img src="/site/img/sell.jpg" alt="" class="button-icon">
             Продать
-        </button>
-        <button class="service-button">
-            <img src="/site/img/rent.png" alt="" class="button-icon">
-            Сдать в аренду
-        </button>
-        <button class="service-button">
-            <img src="/site/img/lease.png" alt="" class="button-icon">
-            Арендовать
         </button>
     </div>
     </div>
@@ -216,14 +210,6 @@
       <h3>Остались вопросы?</h3>
       <a href="/site/contacts/contacts.html"><button class="to-contacts">Свяжитесь с нами</button></a>
     </div>
-
-    <div id="dialog-overlay" class="dialog-overlay">
-      <div class="dialog-content">
-          <h2>Заголовок окна диалога</h2>
-          <p>Текст окна диалога</p>
-          <button id="close-dialog" class="close-button">Закрыть</button>
-      </div>
-  </div>
     <footer style="background-color: gray; height: 10em; margin-top: 5em; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
       <p style="text-align: center; font-size: 1.5em; margin-bottom: 0.5em;">Подписывайтесь на нас в социальных сетях:</p>
       <ul style="list-style: none; display: flex; justify-content: center; flex-wrap: wrap;">

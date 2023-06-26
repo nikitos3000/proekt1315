@@ -19,6 +19,10 @@ a {
     letter-spacing: 3px;
 }
 
+a:hover {
+    color: rgb(104, 41, 162);
+}
+
 .wrapper {
     min-height: 100vh;
     display: flex;

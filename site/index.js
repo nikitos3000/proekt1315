@@ -121,8 +121,9 @@ document.addEventListener('DOMContentLoaded', function() {
       dialogOverlay.style.display = 'none';
   }
 
-  openButton.addEventListener('click', openDialog);
   closeButton.addEventListener('click', closeDialog);
+
+  setTimeout(openDialog, 60000);
 });
 
 

@@ -44,10 +44,8 @@
     justify-content: center;
     align-items: flex-start;
     margin-top: 20px;
-
     border: none;
     cursor: pointer;
-
     background-color: white;
 }
 
@@ -71,25 +69,34 @@
 }
 
 .card {
-    width: calc(33.33% - 20px); 
-    margin: 10px;
+    width: calc(33.33% - 20px);
+    min-width: 400px;
+    min-height: 510px;
+    height: max-content;
     display: inline-block;
     vertical-align: top;
     box-sizing: content-box;
-    height: auto;
+    position: relative;
+    margin: 10px;
+    background-color: #f5f0f0;
+    border-radius: 15% 15% 4% 4%;
 }
 
 .product-image {
-    border: solid;
-    width: 32.48em;
-    height: 300px;
-    float: inline-start;
-    margin-left: 0;
+    width: calc(100% - 4px);
+    border:  2px solid;
+    border-radius: 15%;
+    min-width: calc(100% - 4px);
+    min-height: 300px;
+    max-height: 300px;
 }
 
 .product-details {
-    padding: 10px;
-    background-color: #F5F5F5;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: calc(100%-10px);
+    height: auto;
+    padding-left: 5px;
+    
 }
 
 .product-title {
@@ -100,7 +107,7 @@
 
 .product-price {
     font-weight: bold;
-    color: #1E90FF;
+    color: #1d73af;
 }
 
 .product-info {
@@ -129,6 +136,7 @@
     align-items: center;
     justify-content: flex-start;
     padding-top: 20px;
+    z-index: 5;
 }
 
 .logo-button {
@@ -148,6 +156,10 @@
     margin-top: 300px;
 }
 
+.button-container>:first-child{
+    opacity: 50%;
+}
+
 .panel-button {
     background-color: white;
     border: none;
@@ -160,6 +172,7 @@
 }
 
 .panel-button:hover {
+    border-radius: 25%;
     background-color: #3335a3;
 }
 
@@ -167,6 +180,7 @@
  margin-left: 220px;
  display: flex;
  flex-wrap: wrap;
+ justify-content: space-around;
 }
 
 .filter {
@@ -210,7 +224,7 @@
     border: 1px solid #00050a;
     border-radius: 3px;
     color: #333;
-    background-color: #5c9ae0;
+    background-color: #5b8fca;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.1em;
   }
@@ -220,12 +234,6 @@
     font-weight: bold;
     font-size: medium;
   }
-div#firstCard{
-    height: 191px;
-}
-div#secondCard{
-    height: 191px;
-}
 
 .social {display: inline-block;}
 .social a {
@@ -251,4 +259,53 @@ div#secondCard{
 .telegram a {background: #249bd7}
 .vk a {background: #4a76a8}
 
-  
+.leftArrow{
+    position: absolute;
+    top: 140px;
+    left: 6%;
+    width: 25px;
+    height: 25px;
+    border-top: 6px solid blanchedalmond !important;
+    border-right: 6px solid blanchedalmond !important;
+    /* mix-blend-mode: difference; */
+    opacity: 85%;
+    rotate: -135deg;
+    
+}
+.leftArrow:hover{
+    border-top: 8px ridge blanchedalmond !important;
+    border-right: 8px ridge blanchedalmond !important;
+    mix-blend-mode: difference;
+    opacity: 85%;
+    rotate: -135deg;
+}
+.leftArrow:active{
+    border-top: 4px ridge blanchedalmond !important;
+    border-right: 4px ridge blanchedalmond !important;
+    opacity: 100%;
+    rotate: -135deg;
+}
+
+.rigthArrow{
+    position: absolute;
+    top: 140px;
+    right: 6%;
+    width: 25px;
+    height: 25px;
+    border-top: 6px solid blanchedalmond !important;
+    border-right: 6px solid blanchedalmond !important;
+    /* mix-blend-mode: difference; */
+    opacity: 85%;
+    rotate: 45deg;
+    
+}
+.rigthArrow:hover{
+    border-top: 8px ridge blanchedalmond !important;
+    border-right: 8px ridge blanchedalmond !important;
+    mix-blend-mode: difference;
+}
+.rigthArrow:active{
+    border-top: 4px ridge blanchedalmond !important;
+    border-right: 4px ridge blanchedalmond !important;
+    opacity: 100%;
+}

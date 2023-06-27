@@ -22,10 +22,10 @@
             </button>
           </a>
           <div class="button-container">
-            <a href="/site/kupit/buy.html"><button class="panel-button">Купить</button></a>
-            <a href="/site/sell/sell.html"><button class="panel-button">Продать</button></a>
-            <a href="/site/contacts/contacts.html"><button class="panel-button">Контакты</button></a>
-            <a href="/site/reviews/reviews.html"><button class="panel-button">Отзывы</button></a>
+            <a><button class="panel-button">Купить</button></a>
+            <a href="../../site/sell/sell.html"><button class="panel-button">Продать</button></a>
+            <a href="../../site/contacts/contacts.html"><button class="panel-button">Контакты</button></a>
+            <a href="../../site/reviews/reviews.html"><button class="panel-button">Отзывы</button></a>
         </div>
     </div>
     <div class="filter">
@@ -60,7 +60,9 @@
     </div>
     <div class="content">
     <div class="card active">
-        <img src="../img/ImgOfAppart/apart1_1.png" alt="Apartment 1" class="product-image" onclick= "changePhotoes(this)">
+        <div class="leftArrow" onclick="changePhotoesLeft(this)"></div>
+        <div class="rigthArrow" onclick="changePhotoesRigth(this)"></div>
+        <img src="../img/ImgOfAppart/apart1_1.png" alt="Apartment 1" class="product-image">
         <div class="product-details">
              <h3 class="product-title">Просторная квартира в центре города вблизи от моря</h3>
               <p class="product-price" data-product-price="200000">Цена: $200,000</p>
@@ -71,8 +73,10 @@
     </div>
     
     <div class="card active">
-        <img src="../img/ImgOfAppart/apart2_1.png" alt="Apartment 2" class="product-image" onclick= "changePhotoes(this)">
-        <div class="product-details" id="firstCard">
+        <div class="leftArrow" onclick="changePhotoesLeft(this)"></div>
+        <div class="rigthArrow" onclick="changePhotoesRigth(this)"></div>
+        <img src="../img/ImgOfAppart/apart2_1.png" alt="Apartment 2" class="product-image">
+        <div class="product-details">
                 <h3 class="product-title">Уютная квартира с видом на море</h3>
                  <p class="product-price" data-product-price="150000">Цена: $150,000</p>
                  <p class="product-info" data-product-area="75">Площадь: 75 кв. м.</p>
@@ -82,8 +86,10 @@
     </div>
     
     <div class="card active">
-        <img src="../img/ImgOfHouses/house1_1.png" alt="House 1" class="product-image" onclick= "changePhotoes(this)">
-        <div class="product-details" id="secondCard">
+        <div class="leftArrow" onclick="changePhotoesLeft(this)"></div>
+        <div class="rigthArrow" onclick="changePhotoesRigth(this)"></div>
+        <img src="../img/ImgOfHouses/house1_1.png" alt="House 1" class="product-image">
+        <div class="product-details">
             <h3 class="product-title">Прекрасный дом с садом и бассейном</h3>
              <p class="product-price" data-product-price="500000">Цена: $500,000</p>
              <p class="product-info" data-product-area="250">Площадь: 250 кв. м.</p>
@@ -93,7 +99,9 @@
     </div>
     
     <div class="card active">
-        <img src="../img/ImgOfHouses/house2_1.png" alt="House 2" class="product-image" onclick= "changePhotoes(this)">
+        <div class="leftArrow" onclick="changePhotoesLeft(this)"></div>
+        <div class="rigthArrow" onclick="changePhotoesRigth(this)"></div>
+        <img src="../img/ImgOfHouses/house2_1.png" alt="House 2" class="product-image">
         <div class="product-details">
                 <h3 class="product-title">Изысканный особняк в историческом районе</h3>
                  <p class="product-price" data-product-price="1000000">Цена: $1,000,000</p>
@@ -103,7 +111,9 @@
         </div>
     </div>
      <div class="card active">
-        <img src="../img/ImgOfAppart/apart3_1.png" alt="Apartment 1" class="product-image" onclick= "changePhotoes(this)">
+        <div class="leftArrow" onclick="changePhotoesLeft(this)"></div>
+        <div class="rigthArrow" onclick="changePhotoesRigth(this)"></div>
+        <img src="../img/ImgOfAppart/apart3_1.png" alt="Apartment 1" class="product-image">
         <div class="product-details">
             <h3 class="product-title">Уютная квартира в стиле лофт</h3>
             <p class="product-price" data-product-price="200000">Цена: $200,000</p>
@@ -114,7 +124,9 @@
     </div>
     
     <div class="card active">
-        <img src="../img/ImgOfAppart/apart4_1.png" alt="Apartment 2" class="product-image" onclick= "changePhotoes(this)">
+        <div class="leftArrow" onclick="changePhotoesLeft(this)"></div>
+        <div class="rigthArrow" onclick="changePhotoesRigth(this)"></div>
+        <img src="../img/ImgOfAppart/apart4_1.png" alt="Apartment 2" class="product-image">
         <div class="product-details">
             <h3 class="product-title">Уютная квартира в минималистическом стиле</h3>
             <p class="product-price" data-product-price="150000">Цена: $150,000</p>
@@ -125,7 +137,9 @@
     </div>
     
     <div class="card active">
-        <img src="../img/ImgOfHouses/house3_1.png" alt="House 1" class="product-image" onclick= "changePhotoes(this)">
+        <div class="leftArrow" onclick="changePhotoesLeft(this)"></div>
+        <div class="rigthArrow" onclick="changePhotoesRigth(this)"></div>
+        <img src="../img/ImgOfHouses/house3_1.png" alt="House 1" class="product-image">
         <div class="product-details">
             <h3 class="product-title">Дом в стиле ХайТек</h3>
             <p class="product-price" data-product-price="500000">Цена: $500,000</p>
@@ -136,7 +150,9 @@
     </div>
     
     <div class="card active">
-        <img src="../img/ImgOfHouses/house4_1.png" alt="House 2" class="product-image" onclick= "changePhotoes(this)">
+        <div class="leftArrow" onclick="changePhotoesLeft(this)"></div>
+        <div class="rigthArrow" onclick="changePhotoesRigth(this)"></div>
+        <img src="../img/ImgOfHouses/house4_1.png" alt="House 2" class="product-image">
         <div class="product-details">
             <h3 class="product-title">Изысканный особняк в эклектической стилистике</h3>
             <p class="product-price" data-product-price="1000000">Цена: $1,000,000</p>
@@ -146,7 +162,9 @@
         </div>
     </div>
     <div class="card active">
-        <img src="../img/ImgOfAppart/apart5_1.png" alt="Apartment 1" class="product-image" onclick= "changePhotoes(this)">
+        <div class="leftArrow" onclick="changePhotoesLeft(this)"></div>
+        <div class="rigthArrow" onclick="changePhotoesRigth(this)"></div>
+        <img src="../img/ImgOfAppart/apart5_1.png" alt="Apartment 1" class="product-image">
         <div class="product-details">
             <h3 class="product-title">Роскошные аппартаменты в стиле барроко</h3>
             <p class="product-price" data-product-price="200000">Цена: $200,000</p>
@@ -157,7 +175,9 @@
     </div>
     
     <div class="card active">
-        <img src="../img/ImgOfAppart/apart6_1.png" alt="Apartment 2" class="product-image" onclick= "changePhotoes(this)">
+        <div class="leftArrow" onclick="changePhotoesLeft(this)"></div>
+        <div class="rigthArrow" onclick="changePhotoesRigth(this)"></div>
+        <img src="../img/ImgOfAppart/apart6_1.png" alt="Apartment 2" class="product-image">
         <div class="product-details">
             <h3 class="product-title">Просторная квартира в хайтекстиле</h3>
             <p class="product-price" data-product-price="800000">Цена: $800,000</p>
@@ -168,7 +188,9 @@
     </div>
     
     <div class="card active">
-        <img src="../img/ImgOfHouses/house5_1.png" alt="House 1" class="product-image" onclick= "changePhotoes(this)">
+        <div class="leftArrow" onclick="changePhotoesLeft(this)"></div>
+        <div class="rigthArrow" onclick="changePhotoesRigth(this)"></div>
+        <img src="../img/ImgOfHouses/house5_1.png" alt="House 1" class="product-image">
         <div class="product-details">
             <h3 class="product-title">Небольшой дом в стиле лофт</h3>
             <p class="product-price" data-product-price="500000">Цена: $500,000</p>
@@ -179,7 +201,9 @@
     </div>
     
     <div class="card active">
-        <img src="../img/ImgOfHouses/house6_1.png" alt="House 2" class="product-image" onclick= "changePhotoes(this)">
+        <div class="leftArrow" onclick="changePhotoesLeft(this)"></div>
+        <div class="rigthArrow" onclick="changePhotoesRigth(this)"></div>
+        <img src="../img/ImgOfHouses/house6_1.png" alt="House 2" class="product-image">
         <div class="product-details">
             <h3 class="product-title">Роскошный особняк в стиле Людовика VII</h3>
             <p class="product-price" data-product-price="1000000">Цена: $1,000,000</p>

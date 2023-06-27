@@ -111,23 +111,21 @@ function calculate() {
 document.addEventListener('DOMContentLoaded', function() {
   const dialogOverlay = document.getElementById('dialog-overlay');
   const closeButton = document.getElementById('close-dialog');
-  const soundPlay = new Audio('site/sound/sound.mp3')
-
+  const audio = new Audio('./site/sound/sound.mp3');
   function openDialog() {
-      dialogOverlay.style.display = 'flex';
-      const audio = new Audio('./site/sound/sound.mp3');
-      audio.play();
-  }
-  setTimeout(openDialog, 1000)
-
-  function closeDialog() {
-      dialogOverlay.style.display = 'none';
-  }
+    audio.play()
+    dialogOverlay.style.display = 'flex';
+}
 
 
-  closeButton.addEventListener('click', closeDialog);
+function closeDialog() {
+    dialogOverlay.style.display = 'none';
+}
+
+closeButton.addEventListener('click', closeDialog);
+
+setTimeout(openDialog, 20000);
 
 });
-
 
 

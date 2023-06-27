@@ -1,11 +1,26 @@
-const changePhotoes = (photo) => {
-    splitSrc = photo.src.split('_');
+const changePhotoesLeft = (button) => {
+    pictureOfButton = button.parentElement.children[2];
+    splitSrc = pictureOfButton.src.split('_');
+    firstSliceSrc = splitSrc[0];
+    secondSliceSrc = splitSrc[1];
+    if (secondSliceSrc.startsWith('1')) {
+        pictureOfButton.src = firstSliceSrc + '_3.png';
+    } else {
+        pictureOfButton.src = firstSliceSrc + '_' + (Number(secondSliceSrc[0]) - 1) + '.png';
+    }
+}
+
+const changePhotoesRigth = (button) => {
+    pictureOfButton = button.parentElement.children[2];
+    splitSrc = pictureOfButton.src.split('_');
     firstSliceSrc = splitSrc[0];
     secondSliceSrc = splitSrc[1];
     if (secondSliceSrc.startsWith('3')) {
-        photo.src = firstSliceSrc + '_1.png';
+        pictureOfButton.src = firstSliceSrc + '_1.png';
     } else {
-        photo.src = firstSliceSrc + '_' + (Number(secondSliceSrc[0]) + 1) + '.png';
+        pictureOfButton.src = firstSliceSrc + '_' + (Number(secondSliceSrc[0]) + 1) + '.png';
     }
 }
+
+
 

@@ -70,6 +70,10 @@
     margin-top: 300px;
 }
 
+.button-container>:nth-child(2) {
+  opacity: 50%;
+}
+
 .logo {
     max-width: 100%;
     max-height: 100px;
@@ -106,7 +110,8 @@
 }
 
 .panel-button:hover {
-    background-color: #3335a3;
+  border-radius: 25%;
+  background-color: #3335a3;
 }
 
 .about-button, .contact-button {

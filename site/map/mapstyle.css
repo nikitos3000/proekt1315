@@ -85,6 +85,7 @@
 }
 
   .panel-button:hover {
+    border-radius: 25%;
     background-color: #3335a3;
 }
 

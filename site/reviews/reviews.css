@@ -24,6 +24,7 @@ body{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 5;
   }
 
   .panel {
@@ -48,6 +49,7 @@ body{
     align-items: center;
     justify-content: flex-start;
     padding-top: 20px;
+    z-index: 5;
   }
   
   .logo-button {
@@ -137,8 +139,9 @@ body{
 }
 button#button-create-review{
   position: absolute;
-  width: 100px;
-  height: 100px;
+  text-align: center;
+  width: 130px;
+  height: 90px;
   top: 15px;
   left: 15px;
   z-index: 1000;
@@ -162,7 +165,25 @@ button#button-create-review:active{
   width: 150px;
   height: 100px;
 }
+
+.background{
+  opacity: 60%;
+  border-radius: 5%;
+  image-rendering: crisp-edges;
+  z-index: 1;
+  overflow: visible;
+}
+
+.bin{
+  z-index: 2;
+  position: absolute;
+  top: 75vh;
+  left: 50vh;
+  overflow: visible;
+}
+
 .review{
+  opacity: 100%;
   font-family: 'font-review';
   font-size: 17px;
   line-height: 25px;
@@ -177,19 +198,32 @@ button#button-create-review:active{
   box-sizing: content-box;
   padding: 25px;
   text-align: center;
-  animation: falling 12s ease;
+  animation: falling 11s ease;
   animation-fill-mode: forwards;
 }
 @keyframes falling {
   from{
-    transform: translateY(0);
+   
     opacity: 100%;
   }
+  20%{ rotate: 2deg;}
+  40%{ 
+      rotate: -2deg;
+      opacity: 100%;
+    }
+  50%{ 
+      opacity: 80%;
+  }
+  60%{ rotate: 2deg;}
   70%{
-    opacity: 100%;
+    opacity: 20%;
+    rotate: 0deg;
   }
   to {
-    transform: translateY(600px);
+    rotate: 0deg;
+    top: 75vh;
+    left: 55vh;
     opacity: 0%;
   } 
 }
+

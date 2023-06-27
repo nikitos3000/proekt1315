@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   closeButton.addEventListener('click', closeDialog);
 
-  setTimeout(openDialog, 60000);
+  setTimeout(openDialog, 20000);
 });
 
 

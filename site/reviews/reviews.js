@@ -22,7 +22,7 @@ function generate() {
     temp.append(docTemple);
     setTimeout(() => {
         docTemple.remove();
-    }, 12000);
+    }, 11000);
 }
 const generateRandomHeigth = () => {
     const num = Math.random()*100;

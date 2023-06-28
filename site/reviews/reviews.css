@@ -24,7 +24,7 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 5;
+    z-index: 4;
   }
 
   .panel {
@@ -34,6 +34,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 5;
   }
   
   .panel-2 {
@@ -177,26 +178,26 @@ button#button-create-review:active{
 .bin{
   z-index: 2;
   position: absolute;
-  top: 75vh;
-  left: 50vh;
+  top: 75%;
+  left: 30%;
   overflow: visible;
 }
 
 .review{
   opacity: 100%;
   font-family: 'font-review';
-  font-size: 17px;
+  font-size: 85%;
   line-height: 25px;
   font-weight: 600;
   border: solid;
   border-color: rgb(93, 143, 150);
   position: absolute;
-  border-radius: 30%;
+  border-radius: 35%;
   background-color: aliceblue;
-  max-width: 350px;
+  max-width: 300px;
   height: auto;
   box-sizing: content-box;
-  padding: 25px;
+  padding: 2%;
   text-align: center;
   animation: falling 11s ease;
   animation-fill-mode: forwards;
@@ -221,8 +222,8 @@ button#button-create-review:active{
   }
   to {
     rotate: 0deg;
-    top: 75vh;
-    left: 55vh;
+    top: 75%;
+    left: 34%;
     opacity: 0%;
   } 
 }

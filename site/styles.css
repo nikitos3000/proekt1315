@@ -390,9 +390,20 @@ body{
 }
 
 .to-contacts{
-    margin-left: 30em;
+    margin-left: 24em;
     width: 30em;
     height: 10em;
+    background-color:  #1E90FF;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition-duration: 0.5s;
 }
 
 .review{

@@ -15,6 +15,7 @@
     background-color: white;
      overflow-x: hidden;
      overflow-y: hidden;
+     font-family: 'Courier New', Courier, monospace;
 }
 
 .header {

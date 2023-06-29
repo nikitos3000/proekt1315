@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 function toggleQuestions() {
   const houseType = document.getElementById('houseType').value;
   const multifamilyQuestions = document.getElementById('multifamilyQuestions');
@@ -12,6 +13,7 @@ function toggleQuestions() {
   }
 }
 
+// eslint-disable-next-line no-unused-vars
 function calculate() {
   const location = document.getElementById('location').value;
   let price = 0;
@@ -25,7 +27,7 @@ function calculate() {
   const houseType = document.getElementById('houseType').value;
 
   if (houseType === 'multifamily') {
-    const area = parseInt(document.getElementById('area').value);
+    const area = parseInt(document.getElementById('area').value, 10);
     const rooms = document.getElementById('rooms').value;
     const condition = document.getElementById('condition').value;
 
@@ -53,7 +55,7 @@ function calculate() {
       price += 2000000;
     }
   } else if (houseType === 'singlefamily') {
-    const houseFloors = parseInt(document.getElementById('houseFloors').value);
+    const houseFloors = parseInt(document.getElementById('houseFloors').value, 10);
 
     if (houseFloors === 1) {
       price += 1000000;
@@ -67,7 +69,7 @@ function calculate() {
       price += 5000000;
     }
 
-    const houseRooms = parseInt(document.getElementById('houseRooms').value);
+    const houseRooms = parseInt(document.getElementById('houseRooms').value, 10);
 
     if (houseRooms === 2) {
       price += 1000000;
@@ -77,8 +79,8 @@ function calculate() {
       price += 4000000;
     }
 
-    const houseArea = parseInt(document.getElementById('houseArea').value);
-    const landArea = parseInt(document.getElementById('landArea').value);
+    const houseArea = parseInt(document.getElementById('houseArea').value, 10);
+    const landArea = parseInt(document.getElementById('landArea').value, 10);
 
     if (houseArea >= 1 && houseArea <= 20) {
       price += 1000000;
@@ -108,24 +110,20 @@ function calculate() {
   document.getElementById('result').innerHTML = `Оценка недвижимости: ${price.toFixed(2)} ${currency}`;
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   const dialogOverlay = document.getElementById('dialog-overlay');
   const closeButton = document.getElementById('close-dialog');
   const audio = new Audio('./site/sound/sound.mp3');
   function openDialog() {
-    audio.play()
+    audio.play();
     dialogOverlay.style.display = 'flex';
-}
+  }
 
-
-function closeDialog() {
+  function closeDialog() {
     dialogOverlay.style.display = 'none';
-}
+  }
 
-closeButton.addEventListener('click', closeDialog);
+  closeButton.addEventListener('click', closeDialog);
 
-setTimeout(openDialog, 20000);
-
+  setTimeout(openDialog, 20000);
 });
-
-

@@ -580,14 +580,14 @@ body {
     border: 1px solid rgba(0, 51, 153, 0.8);
     background-color: rgba(0, 51, 153, 0.1);
     padding: 15px 10px;
-  }
+}
   
-  .go-top:hover {
+.go-top:hover {
     color: rgba(0, 51, 153, 0.8);
     border: 1px solid rgba(0, 51, 153, 1);
     background-color: rgba(0, 51, 153, 0.15);
-  }
+}
   
-  .go-top--show {
+.go-top--show {
     display: block;
-  }
+}
